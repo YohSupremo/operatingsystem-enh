@@ -139,6 +139,12 @@ img {
   justify-content: space-between;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav-logo {
   font-size: 1.35rem;
   font-weight: 800;
@@ -225,7 +231,54 @@ img {
   cursor: pointer;
   transition: all var(--transition);
   font-size: 1.2rem;
-  margin-left: 8px;
+}
+
+/* ============================================
+   MOBILE DROPDOWN MENU
+   ============================================ */
+.mobile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border-bottom: 2px solid var(--accent);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  z-index: 999;
+}
+
+.mobile-dropdown.open {
+  max-height: 400px;
+  padding: 8px 0;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--accent);
+  background: var(--accent-light);
+  border-left-color: var(--accent);
 }
 
 .theme-toggle:hover {
@@ -829,29 +882,11 @@ img {
   }
 
   .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: var(--bg-secondary);
-    flex-direction: column;
-    align-items: stretch;
-    padding: 80px 24px 24px;
-    gap: 4px;
-    transition: right var(--transition);
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
-    border-left: 1px solid var(--border);
+    display: none;
   }
 
-  .nav-links.open {
-    right: 0;
-  }
-
-  .nav-link {
-    padding: 14px 16px;
-    font-size: 1rem;
-    border-radius: var(--radius-sm);
+  .mobile-dropdown {
+    display: block;
   }
 
   .hero {
@@ -964,11 +999,11 @@ img {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition);
-  z-index: 999;
+  z-index: 998;
 }
 
 .nav-overlay.active {

@@ -16,11 +16,6 @@
       <a href="#home" class="nav-logo">
         <span class="logo-icon">&#9881;</span> WinTutorials
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
         <li><a href="#windows-os" class="nav-link" data-section="windows-os">Windows OS</a></li>
@@ -28,9 +23,26 @@
         <li><a href="#activities" class="nav-link" data-section="activities">Activities</a></li>
         <li><a href="#about" class="nav-link" data-section="about">About</a></li>
       </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark theme">
-        <span class="theme-icon" id="themeIcon">&#9790;</span>
-      </button>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+          <span class="theme-icon" id="themeIcon">&#9790;</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile dropdown menu -->
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link" data-section="home">&#127968; Home</a></li>
+        <li><a href="#windows-os" class="mobile-nav-link" data-section="windows-os">&#128187; Windows OS</a></li>
+        <li><a href="#windows-server" class="mobile-nav-link" data-section="windows-server">&#9881; Windows Server</a></li>
+        <li><a href="#activities" class="mobile-nav-link" data-section="activities">&#128221; Activities</a></li>
+        <li><a href="#about" class="mobile-nav-link" data-section="about">&#128100; About</a></li>
+      </ul>
     </div>
   </nav>
 

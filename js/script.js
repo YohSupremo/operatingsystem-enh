@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
+  const mobileDropdown = document.getElementById('mobileDropdown');
   const navLinkItems = document.querySelectorAll('.nav-link');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
   const themeToggle = document.getElementById('themeToggle');
   const themeIcon = document.getElementById('themeIcon');
   const backToTop = document.getElementById('backToTop');
@@ -16,33 +18,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoCards = document.querySelectorAll('.video-card');
   const collapseToggles = document.querySelectorAll('.collapse-toggle');
 
-  // ---- Mobile Menu ----
+  // ---- Mobile Dropdown Menu ----
   // Create overlay element for mobile
   const overlay = document.createElement('div');
   overlay.classList.add('nav-overlay');
   document.body.appendChild(overlay);
 
   function toggleMenu() {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('open');
-    overlay.classList.toggle('active');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+    const isOpen = mobileDropdown.classList.contains('open');
+    hamburger.classList.toggle('active', !isOpen);
+    mobileDropdown.classList.toggle('open', !isOpen);
+    overlay.classList.toggle('active', !isOpen);
   }
 
   function closeMenu() {
     hamburger.classList.remove('active');
-    navLinks.classList.remove('open');
+    mobileDropdown.classList.remove('open');
     overlay.classList.remove('active');
-    document.body.style.overflow = '';
   }
 
   hamburger.addEventListener('click', toggleMenu);
   overlay.addEventListener('click', closeMenu);
 
+  // Close dropdown when a mobile nav link is clicked
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close dropdown when a desktop nav link is clicked (no-op on desktop but safe)
   navLinkItems.forEach(link => {
-    link.addEventListener('click', () => {
-      closeMenu();
-    });
+    link.addEventListener('click', closeMenu);
   });
 
   // ---- Sticky Navbar Shadow on Scroll ----
@@ -93,6 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navLinkItems.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-section') === currentSection) {
+        link.classList.add('active');
+      }
+    });
+
+    mobileNavLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('data-section') === currentSection) {
         link.classList.add('active');
@@ -276,7 +288,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Keyboard accessibility: Escape to close menu ----
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+    if (e.key === 'Escape' && mobileDropdown.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  // ---- Close mobile menu on resize past breakpoint ----
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
       closeMenu();
     }
   });
