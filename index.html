@@ -3,45 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Windows OS &amp; Server Tutorials</title>
+  <title>WinTutorials - Windows OS &amp; Server Tutorials</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <!-- ====== NAVIGATION ====== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">
-        <span class="logo-icon">&#9881;</span> WinTutorials
-      </a>
+      <a href="index.html" class="nav-logo"><span class="logo-icon">&#9881;</span> WinTutorials</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-        <li><a href="#windows-os" class="nav-link" data-section="windows-os">Windows OS</a></li>
-        <li><a href="#windows-server" class="nav-link" data-section="windows-server">Windows Server</a></li>
-        <li><a href="#activities" class="nav-link" data-section="activities">Activities</a></li>
-        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="windows-os.html" class="nav-link">Windows OS <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="windows-os/windows-nt-4.html">Windows NT 4.0</a></li>
+            <li><a href="windows-os/windows-95.html">Windows 95</a></li>
+            <li><a href="windows-os/windows-98.html">Windows 98</a></li>
+            <li><a href="windows-os/windows-2000.html">Windows 2000</a></li>
+            <li><a href="windows-os/windows-me.html">Windows ME</a></li>
+            <li><a href="windows-os/windows-xp.html">Windows XP</a></li>
+            <li><a href="windows-os/windows-vista.html">Windows Vista</a></li>
+            <li><a href="windows-os/windows-7.html">Windows 7</a></li>
+            <li><a href="windows-os/windows-8.html">Windows 8</a></li>
+            <li><a href="windows-os/windows-10.html">Windows 10</a></li>
+            <li><a href="windows-os/windows-11.html">Windows 11</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="windows-server.html" class="nav-link">Windows Server <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="windows-server/windows-nt-4-server.html">Windows NT 4.0 Server</a></li>
+            <li><a href="windows-server/windows-2000-server.html">Windows 2000 Server</a></li>
+            <li><a href="windows-server/windows-server-2003.html">Windows Server 2003</a></li>
+            <li><a href="windows-server/windows-server-2008-r2.html">Windows Server 2008 R2</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="activities.html" class="nav-link">Activities <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li>
+            <li><a href="activities/adding-40-users.html">Adding 40 Users</a></li>
+            <li><a href="activities/adding-dhcp-role.html">Adding DHCP Role</a></li>
+            <li><a href="activities/raid.html">RAID Configuration</a></li>
+            <li><a href="activities/file-services.html">File Services</a></li>
+            <li><a href="activities/application-web-server.html">Application &amp; Web Server</a></li>
+            <li><a href="activities/group-policy.html">Group Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav-link">About</a></li>
       </ul>
       <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark theme">
-          <span class="theme-icon" id="themeIcon">&#9790;</span>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-icon" id="themeIcon">&#9790;</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
       </div>
     </div>
-    <!-- Mobile dropdown menu -->
     <div class="mobile-dropdown" id="mobileDropdown">
       <ul class="mobile-nav-links">
-        <li><a href="#home" class="mobile-nav-link" data-section="home">&#127968; Home</a></li>
-        <li><a href="#windows-os" class="mobile-nav-link" data-section="windows-os">&#128187; Windows OS</a></li>
-        <li><a href="#windows-server" class="mobile-nav-link" data-section="windows-server">&#9881; Windows Server</a></li>
-        <li><a href="#activities" class="mobile-nav-link" data-section="activities">&#128221; Activities</a></li>
-        <li><a href="#about" class="mobile-nav-link" data-section="about">&#128100; About</a></li>
+        <li><a href="index.html" class="mobile-nav-link active">&#127968; Home</a></li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-toggle">&#128187; Windows OS <span class="arrow">&#9662;</span></button>
+          <ul class="mobile-sub-menu">
+            <li><a href="windows-os.html">View All Windows OS &rarr;</a></li>
+            <li><a href="windows-os/windows-nt-4.html">Windows NT 4.0</a></li>
+            <li><a href="windows-os/windows-95.html">Windows 95</a></li>
+            <li><a href="windows-os/windows-98.html">Windows 98</a></li>
+            <li><a href="windows-os/windows-2000.html">Windows 2000</a></li>
+            <li><a href="windows-os/windows-me.html">Windows ME</a></li>
+            <li><a href="windows-os/windows-xp.html">Windows XP</a></li>
+            <li><a href="windows-os/windows-vista.html">Windows Vista</a></li>
+            <li><a href="windows-os/windows-7.html">Windows 7</a></li>
+            <li><a href="windows-os/windows-8.html">Windows 8</a></li>
+            <li><a href="windows-os/windows-10.html">Windows 10</a></li>
+            <li><a href="windows-os/windows-11.html">Windows 11</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-toggle">&#9881; Windows Server <span class="arrow">&#9662;</span></button>
+          <ul class="mobile-sub-menu">
+            <li><a href="windows-server.html">View All Servers &rarr;</a></li>
+            <li><a href="windows-server/windows-nt-4-server.html">Windows NT 4.0 Server</a></li>
+            <li><a href="windows-server/windows-2000-server.html">Windows 2000 Server</a></li>
+            <li><a href="windows-server/windows-server-2003.html">Windows Server 2003</a></li>
+            <li><a href="windows-server/windows-server-2008-r2.html">Windows Server 2008 R2</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-toggle">&#128221; Activities <span class="arrow">&#9662;</span></button>
+          <ul class="mobile-sub-menu">
+            <li><a href="activities.html">View All Activities &rarr;</a></li>
+            <li><a href="activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li>
+            <li><a href="activities/adding-40-users.html">Adding 40 Users</a></li>
+            <li><a href="activities/adding-dhcp-role.html">Adding DHCP Role</a></li>
+            <li><a href="activities/raid.html">RAID Configuration</a></li>
+            <li><a href="activities/file-services.html">File Services</a></li>
+            <li><a href="activities/application-web-server.html">Application &amp; Web Server</a></li>
+            <li><a href="activities/group-policy.html">Group Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="mobile-nav-link">&#128100; About</a></li>
       </ul>
     </div>
   </nav>
@@ -51,747 +114,81 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Windows OS &amp; Server <span class="highlight">Tutorials</span></h1>
-      <p class="hero-subtitle">
-        Your comprehensive guide to installing and configuring every major version of
-        Microsoft Windows — from the classic NT&nbsp;4.0 to the modern Windows&nbsp;11,
-        plus Windows Server editions and hands-on activities.
-      </p>
+      <p class="hero-subtitle">Your comprehensive guide to installing and configuring every major version of Microsoft Windows — from the classic NT&nbsp;4.0 to the modern Windows&nbsp;11, plus Windows Server editions and hands-on activities.</p>
       <div class="hero-buttons">
-        <a href="#windows-os" class="btn btn-primary">Explore Windows OS</a>
-        <a href="#windows-server" class="btn btn-secondary">Windows Server</a>
+        <a href="windows-os.html" class="btn btn-primary">Explore Windows OS</a>
+        <a href="windows-server.html" class="btn btn-secondary">Windows Server</a>
       </div>
     </div>
-
-    <!-- Featured Videos -->
     <div class="featured-section">
       <h2 class="section-title">Featured Videos</h2>
       <div class="featured-grid">
-        <div class="featured-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/d_BcjVUAPOw" title="Windows 11 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="featured-info">
-            <h3>Windows 11</h3>
-            <p>Latest Windows OS installation walkthrough</p>
-          </div>
-        </div>
-        <div class="featured-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/huJvZQK7RpQ" title="Windows Server 2008 R2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="featured-info">
-            <h3>Windows Server 2008 R2</h3>
-            <p>Server setup and configuration guide</p>
-          </div>
-        </div>
-        <div class="featured-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/BztTI9rHuAc" title="Windows XP Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="featured-info">
-            <h3>Windows XP</h3>
-            <p>Classic OS installation tutorial</p>
-          </div>
-        </div>
+        <a href="windows-os/windows-11.html" class="featured-card">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/d_BcjVUAPOw" title="Windows 11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="featured-info"><h3>Windows 11</h3><p>Latest Windows OS installation walkthrough</p></div>
+        </a>
+        <a href="windows-server/windows-server-2008-r2.html" class="featured-card">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/huJvZQK7RpQ" title="Windows Server 2008 R2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="featured-info"><h3>Windows Server 2008 R2</h3><p>Server setup and configuration guide</p></div>
+        </a>
+        <a href="windows-os/windows-xp.html" class="featured-card">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/BztTI9rHuAc" title="Windows XP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="featured-info"><h3>Windows XP</h3><p>Classic OS installation tutorial</p></div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ====== SEARCH / FILTER BAR ====== -->
-  <div class="search-bar-container" id="searchBar">
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search videos by title..." aria-label="Search videos" />
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="windows-os">Windows OS</button>
-        <button class="filter-btn" data-filter="windows-server">Server</button>
-        <button class="filter-btn" data-filter="activities">Activities</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ====== WINDOWS OS SECTION ====== -->
-  <section class="content-section" id="windows-os">
+  <!-- Quick overview cards -->
+  <section class="content-section">
     <div class="container">
-      <h2 class="section-heading">
-        <span class="heading-icon">&#128187;</span> Windows OS Tutorials
-      </h2>
-      <p class="section-desc">Step-by-step installation guides for every major Windows operating system release.</p>
-
-      <div class="video-grid">
-
-        <!-- Windows NT 4.0 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows NT 4.0">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/uDQDuafKOgI" title="Windows NT 4.0 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows NT 4.0</h3>
-            <a href="https://youtu.be/uDQDuafKOgI" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>This video covers the complete installation process of Windows NT 4.0 — Microsoft's enterprise-grade operating system from 1996. It introduced the Windows Explorer shell and was a staple in corporate environments.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows NT 4.0 installation media</li>
-                  <li>Select installation type (Express or Custom)</li>
-                  <li>Accept the license agreement</li>
-                  <li>Choose the target partition and file system (NTFS/FAT)</li>
-                  <li>Enter computer name and administrator password</li>
-                  <li>Configure networking components</li>
-                  <li>Complete setup and restart the system</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 95 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 95">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/JHrXTIm1YFw" title="Windows 95 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 95</h3>
-            <a href="https://youtu.be/JHrXTIm1YFw" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Explore the installation of Windows 95, the revolutionary OS that introduced the Start menu, taskbar, and plug-and-play support. This tutorial walks through the entire setup process from boot to desktop.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from a DOS boot disk with CD-ROM drivers</li>
-                  <li>Run SETUP.EXE from the Windows 95 CD</li>
-                  <li>Follow the setup wizard and enter the product key</li>
-                  <li>Select typical or custom installation</li>
-                  <li>Configure user information and components</li>
-                  <li>Set up hardware detection and networking</li>
-                  <li>Restart and complete first-boot configuration</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 98 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 98">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/siDgl6MTNKI" title="Windows 98 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 98</h3>
-            <a href="https://youtu.be/siDgl6MTNKI" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 98 improved upon Windows 95 with better hardware support, Internet Explorer integration, and USB support. This video demonstrates the full installation process in a virtual environment.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Prepare boot media and partition the hard drive</li>
-                  <li>Run setup from the installation CD</li>
-                  <li>Accept the license agreement and enter product key</li>
-                  <li>Select directory and installation type</li>
-                  <li>Configure Windows components and regional settings</li>
-                  <li>Set up networking and identification</li>
-                  <li>Create a startup disk and finish installation</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 2000 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 2000">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/UbAzT1yCLjc" title="Windows 2000 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 2000</h3>
-            <a href="https://youtu.be/UbAzT1yCLjc" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 2000 brought the NT kernel to mainstream business desktops with improved stability, Active Directory, and Plug and Play support. This tutorial covers installation from start to finish.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows 2000 CD</li>
-                  <li>Press Enter to begin setup, accept the license</li>
-                  <li>Create and format the installation partition</li>
-                  <li>Wait for file copying and initial setup</li>
-                  <li>Configure regional settings and personalization</li>
-                  <li>Enter product key and set computer name</li>
-                  <li>Configure networking and complete installation</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows ME -->
-        <div class="video-card" data-category="windows-os" data-title="Windows ME Millennium Edition">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/6Kyq_JU2f4f" title="Windows ME Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows ME</h3>
-            <a href="https://youtu.be/6Kyq_JU2f4f" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows Millennium Edition (ME) was the last DOS-based Windows version. It introduced System Restore and Windows Movie Maker. This video walks through the full installation process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows ME startup disk</li>
-                  <li>Partition and format the hard drive</li>
-                  <li>Launch setup from the installation CD</li>
-                  <li>Enter product key and select installation directory</li>
-                  <li>Choose components and configure settings</li>
-                  <li>Wait for file copying and hardware detection</li>
-                  <li>Complete the setup wizard and restart</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows XP -->
-        <div class="video-card" data-category="windows-os" data-title="Windows XP">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/BztTI9rHuAc" title="Windows XP Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows XP</h3>
-            <a href="https://youtu.be/BztTI9rHuAc" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows XP remains one of the most beloved operating systems ever released. Known for its stability, user-friendly interface, and long lifespan, this tutorial covers the complete installation process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows XP installation CD</li>
-                  <li>Press Enter to set up Windows XP, accept license</li>
-                  <li>Create or select a partition, choose file system</li>
-                  <li>Wait for formatting and file copying</li>
-                  <li>Configure regional settings, name, and product key</li>
-                  <li>Set computer name and administrator password</li>
-                  <li>Configure date/time, network, and complete setup</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows Vista -->
-        <div class="video-card" data-category="windows-os" data-title="Windows Vista">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/aBEdTx6ew6E" title="Windows Vista Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows Vista</h3>
-            <a href="https://youtu.be/aBEdTx6ew6E" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows Vista introduced the Aero glass interface, User Account Control (UAC), and major security improvements. This video demonstrates the step-by-step installation process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows Vista DVD</li>
-                  <li>Select language, time, and keyboard preferences</li>
-                  <li>Click "Install Now" and enter product key</li>
-                  <li>Accept the license terms and choose installation type</li>
-                  <li>Select the target drive/partition</li>
-                  <li>Wait for installation to copy files and configure</li>
-                  <li>Set up user account, password, and preferences</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 7 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 7">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/8913gjcIVNc" title="Windows 7 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 7</h3>
-            <a href="https://youtu.be/8913gjcIVNc" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 7 is widely regarded as one of Microsoft's best releases, offering a refined interface, improved performance over Vista, and features like snap, peek, and shake. Full installation covered here.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows 7 installation media</li>
-                  <li>Select language and regional preferences</li>
-                  <li>Click "Install Now" and accept the license</li>
-                  <li>Choose Custom (advanced) installation</li>
-                  <li>Select or create the target partition</li>
-                  <li>Wait for Windows to install and restart</li>
-                  <li>Set up username, password, and Windows Update</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 8 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 8">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/N6_D3CWBfts" title="Windows 8 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 8</h3>
-            <a href="https://youtu.be/N6_D3CWBfts" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 8 introduced the Metro/Modern UI with live tiles, the Windows Store, and fast boot times. This video covers the complete installation, including the new setup experience.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows 8 installation media</li>
-                  <li>Select language, time format, and input method</li>
-                  <li>Click "Install Now" and enter product key</li>
-                  <li>Accept license terms and choose Custom installation</li>
-                  <li>Select the target drive for installation</li>
-                  <li>Wait for files to copy, install, and configure</li>
-                  <li>Personalize settings and create a Microsoft account</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 10 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 10">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/p--f-bxDucs" title="Windows 10 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 10</h3>
-            <a href="https://youtu.be/p--f-bxDucs" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 10 brought back the Start menu, introduced Cortana, virtual desktops, and the Edge browser. This tutorial provides a complete walkthrough of the installation process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Create bootable USB using Media Creation Tool</li>
-                  <li>Boot from USB and select language preferences</li>
-                  <li>Click "Install Now" and enter product key (or skip)</li>
-                  <li>Select Windows 10 edition and accept license</li>
-                  <li>Choose Custom installation and select drive</li>
-                  <li>Wait for installation and automatic restarts</li>
-                  <li>Configure privacy settings and create user account</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 11 -->
-        <div class="video-card" data-category="windows-os" data-title="Windows 11">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/d_BcjVUAPOw" title="Windows 11 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 11</h3>
-            <a href="https://youtu.be/d_BcjVUAPOw" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 11 features a centered taskbar, redesigned Start menu, snap layouts, widgets, and improved virtual desktop support. This video guides you through the complete installation process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Verify TPM 2.0 and Secure Boot compatibility</li>
-                  <li>Create bootable USB with the Installation Assistant</li>
-                  <li>Boot from USB and select language/region</li>
-                  <li>Click "Install Now" and enter product key</li>
-                  <li>Accept license, choose Custom, and select drive</li>
-                  <li>Wait for installation and system restarts</li>
-                  <li>Sign in with Microsoft account and configure settings</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <h2 class="section-heading"><span class="heading-icon">&#128187;</span> Windows OS Tutorials</h2>
+      <p class="section-desc">Step-by-step installation guides for every major Windows release.</p>
+      <div class="link-grid">
+        <a href="windows-os/windows-nt-4.html" class="link-card"><span>Windows NT 4.0</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-95.html" class="link-card"><span>Windows 95</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-98.html" class="link-card"><span>Windows 98</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-2000.html" class="link-card"><span>Windows 2000</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-me.html" class="link-card"><span>Windows ME</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-xp.html" class="link-card"><span>Windows XP</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-vista.html" class="link-card"><span>Windows Vista</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-7.html" class="link-card"><span>Windows 7</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-8.html" class="link-card"><span>Windows 8</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-10.html" class="link-card"><span>Windows 10</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-os/windows-11.html" class="link-card"><span>Windows 11</span><span class="link-card-arrow">&rarr;</span></a>
       </div>
+      <div class="section-cta"><a href="windows-os.html" class="btn btn-primary">View All Windows OS &rarr;</a></div>
     </div>
   </section>
 
-  <!-- ====== WINDOWS SERVER SECTION ====== -->
-  <section class="content-section section-alt" id="windows-server">
+  <section class="content-section section-alt">
     <div class="container">
-      <h2 class="section-heading">
-        <span class="heading-icon">&#9881;</span> Windows Server Tutorials
-      </h2>
+      <h2 class="section-heading"><span class="heading-icon">&#9881;</span> Windows Server Tutorials</h2>
       <p class="section-desc">Installation and configuration guides for Windows Server editions.</p>
-
-      <div class="video-grid">
-
-        <!-- Windows NT 4.0 Server -->
-        <div class="video-card" data-category="windows-server" data-title="Windows NT 4.0 Server">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/YLT01gl9WfY" title="Windows NT 4.0 Server Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows NT 4.0 Server</h3>
-            <a href="https://youtu.be/YLT01gl9WfY" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows NT 4.0 Server was a foundational server operating system for enterprise networks. This video covers the full installation including domain controller setup and network configuration.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the NT 4.0 Server installation CD</li>
-                  <li>Choose Express or Custom setup</li>
-                  <li>Select partition and file system (NTFS recommended)</li>
-                  <li>Enter server name and administrator credentials</li>
-                  <li>Choose server role (PDC, BDC, or Standalone)</li>
-                  <li>Configure networking protocols and services</li>
-                  <li>Complete installation and configure server roles</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows 2000 Server -->
-        <div class="video-card" data-category="windows-server" data-title="Windows 2000 Server">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/d1W1Enhe2wA" title="Windows 2000 Server Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows 2000 Server</h3>
-            <a href="https://youtu.be/d1W1Enhe2wA" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows 2000 Server introduced Active Directory, Group Policy, and DNS integration. This tutorial demonstrates the complete installation and initial server configuration.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows 2000 Server CD</li>
-                  <li>Begin setup and accept the license agreement</li>
-                  <li>Partition the disk and select NTFS file system</li>
-                  <li>Configure regional and personalization settings</li>
-                  <li>Enter product key and set licensing mode</li>
-                  <li>Set computer name and administrator password</li>
-                  <li>Configure networking and promote to domain controller</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows Server 2003 -->
-        <div class="video-card" data-category="windows-server" data-title="Windows Server 2003">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/mX_moNvj9UM" title="Windows Server 2003 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows Server 2003</h3>
-            <a href="https://youtu.be/mX_moNvj9UM" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows Server 2003 enhanced Active Directory, introduced volume shadow copies, and improved IIS. This video provides a detailed installation walkthrough and initial setup.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows Server 2003 CD</li>
-                  <li>Press Enter to set up, then accept the license</li>
-                  <li>Create partition and format with NTFS</li>
-                  <li>Wait for file copying and restart</li>
-                  <li>Configure regional settings and enter product key</li>
-                  <li>Set licensing mode and computer name</li>
-                  <li>Configure networking and server roles post-install</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows Server 2008 R2 -->
-        <div class="video-card" data-category="windows-server" data-title="Windows Server 2008 R2">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/huJvZQK7RpQ" title="Windows Server 2008 R2 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Windows Server 2008 R2</h3>
-            <a href="https://youtu.be/huJvZQK7RpQ" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Windows Server 2008 R2 introduced Hyper-V improvements, PowerShell 2.0, and enhanced Active Directory. This comprehensive tutorial covers the full installation and configuration process.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Installation Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Boot from the Windows Server 2008 R2 DVD/ISO</li>
-                  <li>Select language, time, and keyboard preferences</li>
-                  <li>Click "Install Now" and select edition</li>
-                  <li>Accept the license and choose Custom installation</li>
-                  <li>Select the target disk and begin installation</li>
-                  <li>Set administrator password on first login</li>
-                  <li>Configure server roles via Server Manager</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="link-grid">
+        <a href="windows-server/windows-nt-4-server.html" class="link-card"><span>Windows NT 4.0 Server</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-server/windows-2000-server.html" class="link-card"><span>Windows 2000 Server</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-server/windows-server-2003.html" class="link-card"><span>Windows Server 2003</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="windows-server/windows-server-2008-r2.html" class="link-card"><span>Windows Server 2008 R2</span><span class="link-card-arrow">&rarr;</span></a>
       </div>
+      <div class="section-cta"><a href="windows-server.html" class="btn btn-primary">View All Server Tutorials &rarr;</a></div>
     </div>
   </section>
 
-  <!-- ====== ACTIVITIES SECTION ====== -->
-  <section class="content-section" id="activities">
+  <section class="content-section">
     <div class="container">
-      <h2 class="section-heading">
-        <span class="heading-icon">&#128221;</span> Activities &amp; Labs
-      </h2>
-      <p class="section-desc">Hands-on activities covering server administration tasks like user management, DHCP, RAID, and more.</p>
-
-      <div class="video-grid">
-
-        <!-- Product Key & Adding Multiple Users -->
-        <div class="video-card" data-category="activities" data-title="Product Key Adding Multiple Users Windows Server 2008 R2">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/5HGGeLvgGyY" title="Product Key & Adding Multiple Users" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Product Key &amp; Adding Multiple Users</h3>
-            <span class="card-badge">Windows Server 2008 R2</span>
-            <a href="https://youtu.be/5HGGeLvgGyY" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Learn how to activate Windows Server 2008 R2 with a product key and efficiently add multiple user accounts using Active Directory Users and Computers.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Open System Properties and enter the product key</li>
-                  <li>Activate Windows Server online or by phone</li>
-                  <li>Open Active Directory Users and Computers</li>
-                  <li>Create an Organizational Unit for users</li>
-                  <li>Add individual user accounts with credentials</li>
-                  <li>Set password policies and account options</li>
-                  <li>Verify user accounts and test login</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Adding 40 Users -->
-        <div class="video-card" data-category="activities" data-title="Adding 40 Users Bulk User Creation">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/RAMG59gdPVs" title="Adding 40 Users" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Adding 40 Users</h3>
-            <span class="card-badge">Bulk User Creation</span>
-            <a href="https://youtu.be/RAMG59gdPVs" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>This activity demonstrates bulk user creation in Active Directory. Learn how to efficiently create 40 user accounts using scripting or CSV import methods.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Plan user naming convention and OU structure</li>
-                  <li>Prepare a CSV file with user details</li>
-                  <li>Use PowerShell or dsadd for bulk creation</li>
-                  <li>Import users from the CSV file</li>
-                  <li>Set default passwords and account policies</li>
-                  <li>Verify all 40 accounts in Active Directory</li>
-                  <li>Test login with several created accounts</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Adding DHCP Role -->
-        <div class="video-card" data-category="activities" data-title="Adding DHCP Role Server">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/Un_w8flDsu0" title="Adding DHCP Role" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Adding DHCP Role</h3>
-            <span class="card-badge">Server Role</span>
-            <a href="https://youtu.be/Un_w8flDsu0" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Learn how to install and configure the DHCP Server role on Windows Server. This activity covers scope creation, IP range configuration, and lease management.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Open Server Manager and add the DHCP role</li>
-                  <li>Complete the DHCP installation wizard</li>
-                  <li>Authorize the DHCP server in Active Directory</li>
-                  <li>Create a new DHCP scope with IP range</li>
-                  <li>Configure subnet mask, gateway, and DNS</li>
-                  <li>Set lease duration and exclusion ranges</li>
-                  <li>Activate the scope and test client connectivity</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- RAID -->
-        <div class="video-card" data-category="activities" data-title="RAID Configuration Disk Management">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/c9CgWgI8R7U" title="RAID Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>RAID Configuration</h3>
-            <span class="card-badge">Disk Management</span>
-            <a href="https://youtu.be/c9CgWgI8R7U" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Explore RAID (Redundant Array of Independent Disks) configuration on Windows Server. This video covers RAID 0, 1, and 5 setups using Disk Management.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Open Disk Management from Server Manager</li>
-                  <li>Initialize new disks as dynamic disks</li>
-                  <li>Create a striped volume (RAID 0) for performance</li>
-                  <li>Create a mirrored volume (RAID 1) for redundancy</li>
-                  <li>Create a RAID-5 volume for balanced performance</li>
-                  <li>Format volumes and assign drive letters</li>
-                  <li>Test fault tolerance by simulating disk failure</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- File Services -->
-        <div class="video-card" data-category="activities" data-title="File Services Shared Folders">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/1CjRuPO5uAU" title="File Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>File Services</h3>
-            <span class="card-badge">Server Role</span>
-            <a href="https://youtu.be/1CjRuPO5uAU" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Learn how to set up File Services on Windows Server, including shared folders, NTFS permissions, and file sharing across the network.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Install the File Services role via Server Manager</li>
-                  <li>Create shared folders on the server</li>
-                  <li>Configure NTFS and share permissions</li>
-                  <li>Set up disk quotas for user storage limits</li>
-                  <li>Enable file screening to block file types</li>
-                  <li>Map network drives on client machines</li>
-                  <li>Test file access with different user accounts</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Application and Web Server -->
-        <div class="video-card" data-category="activities" data-title="Application Web Server IIS">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/0ykl69OdIOM" title="Application and Web Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Application &amp; Web Server</h3>
-            <span class="card-badge">IIS Setup</span>
-            <a href="https://youtu.be/0ykl69OdIOM" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Set up an Application and Web Server using IIS (Internet Information Services). This activity covers installing IIS, configuring websites, and deploying web applications.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Add the Web Server (IIS) role in Server Manager</li>
-                  <li>Select required role services and features</li>
-                  <li>Complete the IIS installation</li>
-                  <li>Open IIS Manager and explore the default website</li>
-                  <li>Create a new website with custom bindings</li>
-                  <li>Deploy web application files to the site folder</li>
-                  <li>Test the website from a client browser</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Group Policy -->
-        <div class="video-card" data-category="activities" data-title="Group Policy GPO Management">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dI5Tn5_Il00" title="Group Policy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="card-body">
-            <h3>Group Policy</h3>
-            <span class="card-badge">GPO Management</span>
-            <a href="https://youtu.be/dI5Tn5_Il00" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
-            <div class="card-description">
-              <p>Master Group Policy management in Windows Server. This video covers creating GPOs, linking them to OUs, and configuring computer and user policies for centralized management.</p>
-              <button class="collapse-toggle" aria-expanded="false">Show Steps &#9662;</button>
-              <div class="collapse-content">
-                <ol>
-                  <li>Open Group Policy Management Console (GPMC)</li>
-                  <li>Create a new Group Policy Object (GPO)</li>
-                  <li>Edit the GPO and configure computer policies</li>
-                  <li>Configure user policies (desktop, restrictions)</li>
-                  <li>Link the GPO to an Organizational Unit</li>
-                  <li>Run gpupdate /force on client machines</li>
-                  <li>Verify policy application with gpresult</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <h2 class="section-heading"><span class="heading-icon">&#128221;</span> Activities &amp; Labs</h2>
+      <p class="section-desc">Hands-on activities covering server administration tasks.</p>
+      <div class="link-grid">
+        <a href="activities/product-key-multiple-users.html" class="link-card"><span>Product Key &amp; Multiple Users</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/adding-40-users.html" class="link-card"><span>Adding 40 Users</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/adding-dhcp-role.html" class="link-card"><span>Adding DHCP Role</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/raid.html" class="link-card"><span>RAID Configuration</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/file-services.html" class="link-card"><span>File Services</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/application-web-server.html" class="link-card"><span>Application &amp; Web Server</span><span class="link-card-arrow">&rarr;</span></a>
+        <a href="activities/group-policy.html" class="link-card"><span>Group Policy</span><span class="link-card-arrow">&rarr;</span></a>
       </div>
-    </div>
-  </section>
-
-  <!-- ====== ABOUT SECTION ====== -->
-  <section class="content-section section-alt" id="about">
-    <div class="container">
-      <h2 class="section-heading">
-        <span class="heading-icon">&#128100;</span> About
-      </h2>
-
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-avatar">
-            <span>&#128104;&#8205;&#128187;</span>
-          </div>
-          <h3>About the Creator</h3>
-          <p>
-            This website was created as an educational resource for students and IT professionals
-            learning about Windows operating systems and server administration. The tutorials
-            are designed to provide clear, step-by-step guidance for installing and configuring
-            various versions of Windows.
-          </p>
-          <p>
-            With a passion for IT education and system administration, the goal is to make
-            complex installation processes accessible and easy to follow for learners at all levels.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <div class="about-avatar">
-            <span>&#127919;</span>
-          </div>
-          <h3>Purpose of this Site</h3>
-          <p>
-            This website serves as a centralized hub for Windows OS and Windows Server
-            installation tutorials. Whether you're a student studying for IT certifications,
-            a professional setting up lab environments, or simply curious about older Windows
-            versions, you'll find comprehensive video guides here.
-          </p>
-          <ul class="about-list">
-            <li>Complete installation walkthroughs for Windows OS (NT 4.0 to 11)</li>
-            <li>Windows Server setup guides (NT 4.0 Server to 2008 R2)</li>
-            <li>Hands-on activities for server administration tasks</li>
-            <li>Step-by-step instructions accompanying each video</li>
-          </ul>
-        </div>
-
-        <div class="about-card">
-          <div class="about-avatar">
-            <span>&#128218;</span>
-          </div>
-          <h3>How to Use This Site</h3>
-          <p>
-            Browse through the sections using the navigation bar at the top. Each section
-            contains video tutorials with embedded YouTube players so you can watch directly
-            on this page. Click "Watch on YouTube" to view the video on YouTube. Expand the
-            installation steps below each video for a text-based quick reference guide.
-          </p>
-          <p>
-            Use the search bar to quickly find specific tutorials, or use the filter buttons
-            to narrow down by category.
-          </p>
-        </div>
-      </div>
+      <div class="section-cta"><a href="activities.html" class="btn btn-primary">View All Activities &rarr;</a></div>
     </div>
   </section>
 
@@ -799,47 +196,16 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col">
-          <h4><span class="logo-icon">&#9881;</span> WinTutorials</h4>
-          <p>Your comprehensive guide to Windows OS and Server installation tutorials.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#windows-os">Windows OS</a></li>
-            <li><a href="#windows-server">Windows Server</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Windows OS</h4>
-          <ul>
-            <li><a href="#windows-os">Windows NT 4.0 – XP</a></li>
-            <li><a href="#windows-os">Windows Vista – 8</a></li>
-            <li><a href="#windows-os">Windows 10 – 11</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Server &amp; Activities</h4>
-          <ul>
-            <li><a href="#windows-server">NT 4.0 – 2008 R2 Server</a></li>
-            <li><a href="#activities">DHCP &amp; RAID</a></li>
-            <li><a href="#activities">File &amp; Web Services</a></li>
-            <li><a href="#activities">Group Policy</a></li>
-          </ul>
-        </div>
+        <div class="footer-col"><h4><span class="logo-icon">&#9881;</span> WinTutorials</h4><p>Your comprehensive guide to Windows OS and Server installation tutorials.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="windows-os.html">Windows OS</a></li><li><a href="windows-server.html">Windows Server</a></li><li><a href="activities.html">Activities</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer-col"><h4>Popular</h4><ul><li><a href="windows-os/windows-xp.html">Windows XP</a></li><li><a href="windows-os/windows-10.html">Windows 10</a></li><li><a href="windows-os/windows-11.html">Windows 11</a></li><li><a href="windows-server/windows-server-2008-r2.html">Server 2008 R2</a></li></ul></div>
+        <div class="footer-col"><h4>Activities</h4><ul><li><a href="activities/adding-dhcp-role.html">DHCP Role</a></li><li><a href="activities/raid.html">RAID</a></li><li><a href="activities/file-services.html">File Services</a></li><li><a href="activities/group-policy.html">Group Policy</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 WinTutorials. All rights reserved. Built for educational purposes.</p>
-      </div>
+      <div class="footer-bottom"><p>&copy; 2026 WinTutorials. All rights reserved. Built for educational purposes.</p></div>
     </div>
   </footer>
 
-  <!-- ====== BACK TO TOP ====== -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">&#8679;</button>
-
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
   <script src="js/script.js"></script>
 </body>
 </html>

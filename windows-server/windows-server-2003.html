@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows Server 2003 Installation - WinTutorials</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo"><span class="logo-icon">&#9881;</span> WinTutorials</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown"><a href="../windows-os.html" class="nav-link">Windows OS <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="../windows-os/windows-nt-4.html">Windows NT 4.0</a></li><li><a href="../windows-os/windows-95.html">Windows 95</a></li><li><a href="../windows-os/windows-98.html">Windows 98</a></li><li><a href="../windows-os/windows-2000.html">Windows 2000</a></li><li><a href="../windows-os/windows-me.html">Windows ME</a></li><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-vista.html">Windows Vista</a></li><li><a href="../windows-os/windows-7.html">Windows 7</a></li><li><a href="../windows-os/windows-8.html">Windows 8</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></li>
+        <li class="has-dropdown"><a href="../windows-server.html" class="nav-link active">Windows Server <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="windows-nt-4-server.html">Windows NT 4.0 Server</a></li><li><a href="windows-2000-server.html">Windows 2000 Server</a></li><li><a href="windows-server-2003.html">Windows Server 2003</a></li><li><a href="windows-server-2008-r2.html">Windows Server 2008 R2</a></li></ul></li>
+        <li class="has-dropdown"><a href="../activities.html" class="nav-link">Activities <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="../activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li><li><a href="../activities/adding-40-users.html">Adding 40 Users</a></li><li><a href="../activities/adding-dhcp-role.html">Adding DHCP Role</a></li><li><a href="../activities/raid.html">RAID Configuration</a></li><li><a href="../activities/file-services.html">File Services</a></li><li><a href="../activities/application-web-server.html">Application &amp; Web Server</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li></ul></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-icon" id="themeIcon">&#9790;</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      </div>
+    </div>
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <ul class="mobile-nav-links">
+        <li><a href="../index.html" class="mobile-nav-link">&#127968; Home</a></li>
+        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle">&#128187; Windows OS <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../windows-os.html">View All Windows OS &rarr;</a></li><li><a href="../windows-os/windows-nt-4.html">Windows NT 4.0</a></li><li><a href="../windows-os/windows-95.html">Windows 95</a></li><li><a href="../windows-os/windows-98.html">Windows 98</a></li><li><a href="../windows-os/windows-2000.html">Windows 2000</a></li><li><a href="../windows-os/windows-me.html">Windows ME</a></li><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-vista.html">Windows Vista</a></li><li><a href="../windows-os/windows-7.html">Windows 7</a></li><li><a href="../windows-os/windows-8.html">Windows 8</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></li>
+        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle active">&#9881; Windows Server <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../windows-server.html">View All Servers &rarr;</a></li><li><a href="windows-nt-4-server.html">Windows NT 4.0 Server</a></li><li><a href="windows-2000-server.html">Windows 2000 Server</a></li><li><a href="windows-server-2003.html">Windows Server 2003</a></li><li><a href="windows-server-2008-r2.html">Windows Server 2008 R2</a></li></ul></li>
+        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle">&#128221; Activities <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../activities.html">View All Activities &rarr;</a></li><li><a href="../activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li><li><a href="../activities/adding-40-users.html">Adding 40 Users</a></li><li><a href="../activities/adding-dhcp-role.html">Adding DHCP Role</a></li><li><a href="../activities/raid.html">RAID Configuration</a></li><li><a href="../activities/file-services.html">File Services</a></li><li><a href="../activities/application-web-server.html">Application &amp; Web Server</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li></ul></li>
+        <li><a href="../about.html" class="mobile-nav-link">&#128100; About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../windows-server.html">Windows Server</a> &rsaquo; <span>Server 2003</span></nav>
+      <h1>Windows Server 2003 Installation</h1>
+      <p>Released: 2003</p>
+    </div>
+  </section>
+
+  <section class="content-section video-detail-page">
+    <div class="container">
+      <div class="video-detail-layout">
+        <div class="video-main">
+          <div class="video-wrapper-lg">
+            <iframe src="https://www.youtube.com/embed/mX_moNvj9UM" title="Windows Server 2003 Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <a href="https://youtu.be/mX_moNvj9UM" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
+        </div>
+        <div class="video-info">
+          <h2>Overview</h2>
+          <p>Windows Server 2003 built on Windows 2000 Server with improved Active Directory, better security, and enhanced management capabilities. It was widely used for enterprise environments and web hosting.</p>
+          <h2>Installation Steps</h2>
+          <div class="steps-container">
+            <ol class="steps-list">
+              <li>Create a virtual machine with 512 MB RAM and 8 GB disk.</li>
+              <li>Mount the Windows Server 2003 ISO.</li>
+              <li>Boot from CD and press Enter to set up.</li>
+              <li>Accept the license agreement.</li>
+              <li>Create a partition and format as NTFS.</li>
+              <li>Wait for files to copy and restart.</li>
+              <li>Complete the GUI setup phase.</li>
+              <li>Configure regional and language options.</li>
+              <li>Enter your name, organization, and product key.</li>
+              <li>Choose licensing mode and computer name.</li>
+              <li>Set the administrator password.</li>
+              <li>Configure date/time and networking.</li>
+              <li>Join a workgroup or domain and finish setup.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="page-nav">
+        <a href="windows-2000-server.html" class="btn btn-outline">&larr; 2000 Server</a>
+        <a href="../windows-server.html" class="btn btn-outline">All Windows Server</a>
+        <a href="windows-server-2008-r2.html" class="btn btn-outline">Server 2008 R2 &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4><span class="logo-icon">&#9881;</span> WinTutorials</h4><p>Your comprehensive guide to Windows OS and Server installation tutorials.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../windows-os.html">Windows OS</a></li><li><a href="../windows-server.html">Windows Server</a></li><li><a href="../activities.html">Activities</a></li><li><a href="../about.html">About</a></li></ul></div>
+        <div class="footer-col"><h4>Popular</h4><ul><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></div>
+        <div class="footer-col"><h4>Server</h4><ul><li><a href="windows-server-2008-r2.html">Server 2008 R2</a></li><li><a href="../activities/adding-dhcp-role.html">DHCP Role</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 WinTutorials. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+  <script src="../js/script.js"></script>
+</body>
+</html>
