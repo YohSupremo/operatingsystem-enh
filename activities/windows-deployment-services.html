@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Group Policy Configuration - WinTutorials</title>
+  <title>Windows Deployment Services (WDS) - WinTutorials</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,9 +38,9 @@
 
   <section class="page-header">
     <div class="container">
-      <nav class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../activities.html">Activities</a> &rsaquo; <span>Group Policy</span></nav>
-      <h1>Group Policy Configuration</h1>
-      <p>GPO Management Lab</p>
+      <nav class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../activities.html">Activities</a> &rsaquo; <span>Windows Deployment Services</span></nav>
+      <h1>Windows Deployment Services (WDS)</h1>
+      <p>Network-Based OS Deployment</p>
     </div>
   </section>
 
@@ -49,36 +49,36 @@
       <div class="video-detail-layout">
         <div class="video-main">
           <div class="video-wrapper-lg">
-            <iframe src="https://www.youtube.com/embed/dI5Tn5_Il00" title="Group Policy Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hpH97rDy_PE" title="Windows Deployment Services (WDS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <a href="https://youtu.be/dI5Tn5_Il00" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
+          <a href="https://youtu.be/hpH97rDy_PE" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
         </div>
         <div class="video-info">
           <h2>Overview</h2>
-          <p>Create and manage Group Policy Objects (GPOs) in Active Directory. Learn to link GPOs to Organizational Units, configure computer and user policies, and enforce security settings across your domain.</p>
+          <p>Windows Deployment Services (WDS) enables network-based deployment of Windows operating systems. Learn how to install and configure the WDS role on Windows Server, add boot and install images, and deploy Windows to client machines over the network using PXE boot.</p>
           <h2>Steps</h2>
           <div class="steps-container">
             <ol class="steps-list">
-              <li>Open Group Policy Management Console (gpmc.msc).</li>
-              <li>Navigate to the domain in the tree.</li>
-              <li>Right-click and select Create a GPO in this domain.</li>
-              <li>Name the GPO descriptively.</li>
-              <li>Right-click the GPO and select Edit.</li>
-              <li>Navigate Computer Configuration &gt; Policies &gt; Windows Settings.</li>
-              <li>Configure desired computer policies (e.g., password policy).</li>
-              <li>Navigate User Configuration &gt; Policies.</li>
-              <li>Configure user policies (e.g., desktop restrictions, folder redirection).</li>
-              <li>Close the editor and link the GPO to an OU.</li>
-              <li>Run gpupdate /force on a client.</li>
-              <li>Verify policies are applied using gpresult /r.</li>
+              <li>Install the Windows Deployment Services role via Server Manager.</li>
+              <li>Open the WDS management console.</li>
+              <li>Configure the WDS server (Integrated with Active Directory).</li>
+              <li>Set the remote installation folder path.</li>
+              <li>Configure PXE server response settings.</li>
+              <li>Add a boot image (boot.wim from Windows installation media).</li>
+              <li>Add an install image (install.wim from Windows installation media).</li>
+              <li>Create an image group for organization.</li>
+              <li>Configure DHCP options if WDS and DHCP are on the same server.</li>
+              <li>PXE boot a client machine on the network.</li>
+              <li>Select the boot image and proceed with OS installation.</li>
+              <li>Verify successful deployment on the client machine.</li>
             </ol>
           </div>
         </div>
       </div>
       <div class="page-nav">
-        <a href="application-web-server.html" class="btn btn-outline">&larr; Application &amp; Web Server (IIS)</a>
+        <a href="group-policy.html" class="btn btn-outline">&larr; Group Policy</a>
         <a href="../activities.html" class="btn btn-outline">All Activities</a>
-        <a href="windows-deployment-services.html" class="btn btn-outline">Windows Deployment Services &rarr;</a>
+        <a href="product-key-multiple-users.html" class="btn btn-outline">Product Key &amp; Adding Multiple Users &rarr;</a>
       </div>
     </div>
   </section>
