@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Windows ME Installation - WinTutorials</title>
+  <title>Part 6: Remote Desktop - Case Study - WinTutorials</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,22 +15,10 @@
       <a href="../index.html" class="nav-logo"><span class="logo-icon">&#9881;</span> WinTutorials</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li class="has-dropdown"><a href="../windows-os.html" class="nav-link active">Windows OS <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="windows-nt-4.html">Windows NT 4.0</a></li><li><a href="windows-95.html">Windows 95</a></li><li><a href="windows-98.html">Windows 98</a></li><li><a href="windows-2000.html">Windows 2000</a></li><li><a href="windows-me.html">Windows ME</a></li><li><a href="windows-xp.html">Windows XP</a></li><li><a href="windows-vista.html">Windows Vista</a></li><li><a href="windows-7.html">Windows 7</a></li><li><a href="windows-8.html">Windows 8</a></li><li><a href="windows-10.html">Windows 10</a></li><li><a href="windows-11.html">Windows 11</a></li></ul></li>
+        <li class="has-dropdown"><a href="../windows-os.html" class="nav-link">Windows OS <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="../windows-os/windows-nt-4.html">Windows NT 4.0</a></li><li><a href="../windows-os/windows-95.html">Windows 95</a></li><li><a href="../windows-os/windows-98.html">Windows 98</a></li><li><a href="../windows-os/windows-2000.html">Windows 2000</a></li><li><a href="../windows-os/windows-me.html">Windows ME</a></li><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-vista.html">Windows Vista</a></li><li><a href="../windows-os/windows-7.html">Windows 7</a></li><li><a href="../windows-os/windows-8.html">Windows 8</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></li>
         <li class="has-dropdown"><a href="../windows-server.html" class="nav-link">Windows Server <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="../windows-server/windows-nt-4-server.html">Windows NT 4.0 Server</a></li><li><a href="../windows-server/windows-2000-server.html">Windows 2000 Server</a></li><li><a href="../windows-server/windows-server-2003.html">Windows Server 2003</a></li><li><a href="../windows-server/windows-server-2008-r2.html">Windows Server 2008 R2</a></li></ul></li>
         <li class="has-dropdown"><a href="../activities.html" class="nav-link">Activities <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="../activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li><li><a href="../activities/adding-40-users.html">Adding 40 Users</a></li><li><a href="../activities/adding-dhcp-role.html">Adding DHCP Role</a></li><li><a href="../activities/raid.html">RAID Configuration</a></li><li><a href="../activities/file-services.html">File Services</a></li><li><a href="../activities/application-web-server.html">Application &amp; Web Server</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li><li><a href="../activities/windows-deployment-services.html">Windows Deployment Services</a></li></ul></li>
-        <li class="has-dropdown">
-          <a href="../case-study.html" class="nav-link">Case Study <span class="arrow">&#9662;</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="../case-study/domain-controller.html">Part 1: Domain Controller</a></li>
-            <li><a href="../case-study/adding-users.html">Part 2: Adding Users</a></li>
-            <li><a href="../case-study/dhcp-server.html">Part 3: DHCP Server</a></li>
-            <li><a href="../case-study/file-sharing.html">Part 4: File Sharing</a></li>
-            <li><a href="../case-study/raid.html">Part 5: RAID</a></li>
-            <li><a href="../case-study/remote-desktop.html">Part 6: Remote Desktop</a></li>
-            <li><a href="../case-study/web-server.html">Part 7: Web Server</a></li>
-            <li><a href="../case-study/group-policies.html">Part 8: Group Policies</a></li>
-          </ul>
-        </li>
+        <li class="has-dropdown"><a href="../case-study.html" class="nav-link active">Case Study <span class="arrow">&#9662;</span></a><ul class="dropdown-menu"><li><a href="domain-controller.html">Part 1: Domain Controller</a></li><li><a href="adding-users.html">Part 2: Adding Users</a></li><li><a href="dhcp-server.html">Part 3: DHCP Server</a></li><li><a href="file-sharing.html">Part 4: File Sharing</a></li><li><a href="raid.html">Part 5: RAID</a></li><li><a href="remote-desktop.html">Part 6: Remote Desktop</a></li><li><a href="web-server.html">Part 7: Web Server</a></li><li><a href="group-policies.html">Part 8: Group Policies</a></li></ul></li>
         <li><a href="../about.html" class="nav-link">About</a></li>
       </ul>
       <div class="nav-right">
@@ -41,23 +29,10 @@
     <div class="mobile-dropdown" id="mobileDropdown">
       <ul class="mobile-nav-links">
         <li><a href="../index.html" class="mobile-nav-link">&#127968; Home</a></li>
-        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle active">&#128187; Windows OS <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../windows-os.html">View All Windows OS &rarr;</a></li><li><a href="windows-nt-4.html">Windows NT 4.0</a></li><li><a href="windows-95.html">Windows 95</a></li><li><a href="windows-98.html">Windows 98</a></li><li><a href="windows-2000.html">Windows 2000</a></li><li><a href="windows-me.html">Windows ME</a></li><li><a href="windows-xp.html">Windows XP</a></li><li><a href="windows-vista.html">Windows Vista</a></li><li><a href="windows-7.html">Windows 7</a></li><li><a href="windows-8.html">Windows 8</a></li><li><a href="windows-10.html">Windows 10</a></li><li><a href="windows-11.html">Windows 11</a></li></ul></li>
+        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle">&#128187; Windows OS <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../windows-os.html">View All Windows OS &rarr;</a></li><li><a href="../windows-os/windows-nt-4.html">Windows NT 4.0</a></li><li><a href="../windows-os/windows-95.html">Windows 95</a></li><li><a href="../windows-os/windows-2000.html">Windows 2000</a></li><li><a href="../windows-os/windows-me.html">Windows ME</a></li><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-vista.html">Windows Vista</a></li><li><a href="../windows-os/windows-7.html">Windows 7</a></li><li><a href="../windows-os/windows-8.html">Windows 8</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></li>
         <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle">&#9881; Windows Server <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../windows-server.html">View All Servers &rarr;</a></li><li><a href="../windows-server/windows-nt-4-server.html">Windows NT 4.0 Server</a></li><li><a href="../windows-server/windows-2000-server.html">Windows 2000 Server</a></li><li><a href="../windows-server/windows-server-2003.html">Windows Server 2003</a></li><li><a href="../windows-server/windows-server-2008-r2.html">Windows Server 2008 R2</a></li></ul></li>
         <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle">&#128221; Activities <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../activities.html">View All Activities &rarr;</a></li><li><a href="../activities/product-key-multiple-users.html">Product Key &amp; Multiple Users</a></li><li><a href="../activities/adding-40-users.html">Adding 40 Users</a></li><li><a href="../activities/adding-dhcp-role.html">Adding DHCP Role</a></li><li><a href="../activities/raid.html">RAID Configuration</a></li><li><a href="../activities/file-services.html">File Services</a></li><li><a href="../activities/application-web-server.html">Application &amp; Web Server</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li><li><a href="../activities/windows-deployment-services.html">Windows Deployment Services</a></li></ul></li>
-        <li class="mobile-has-dropdown">
-          <button class="mobile-dropdown-toggle">&#128218; Case Study <span class="arrow">&#9662;</span></button>
-          <ul class="mobile-sub-menu">
-            <li><a href="../case-study.html">View All Case Study &rarr;</a></li>
-            <li><a href="../case-study/domain-controller.html">Part 1: Domain Controller</a></li>
-            <li><a href="../case-study/adding-users.html">Part 2: Adding Users</a></li>
-            <li><a href="../case-study/dhcp-server.html">Part 3: DHCP Server</a></li>
-            <li><a href="../case-study/file-sharing.html">Part 4: File Sharing</a></li>
-            <li><a href="../case-study/raid.html">Part 5: RAID</a></li>
-            <li><a href="../case-study/remote-desktop.html">Part 6: Remote Desktop</a></li>
-            <li><a href="../case-study/web-server.html">Part 7: Web Server</a></li>
-            <li><a href="../case-study/group-policies.html">Part 8: Group Policies</a></li>
-          </ul>
-        </li>
+        <li class="mobile-has-dropdown"><button class="mobile-dropdown-toggle active">&#128218; Case Study <span class="arrow">&#9662;</span></button><ul class="mobile-sub-menu"><li><a href="../case-study.html">View All Case Study &rarr;</a></li><li><a href="domain-controller.html">Part 1: Domain Controller</a></li><li><a href="adding-users.html">Part 2: Adding Users</a></li><li><a href="dhcp-server.html">Part 3: DHCP Server</a></li><li><a href="file-sharing.html">Part 4: File Sharing</a></li><li><a href="raid.html">Part 5: RAID</a></li><li><a href="remote-desktop.html">Part 6: Remote Desktop</a></li><li><a href="web-server.html">Part 7: Web Server</a></li><li><a href="group-policies.html">Part 8: Group Policies</a></li></ul></li>
         <li><a href="../about.html" class="mobile-nav-link">&#128100; About</a></li>
       </ul>
     </div>
@@ -65,9 +40,9 @@
 
   <section class="page-header">
     <div class="container">
-      <nav class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../windows-os.html">Windows OS</a> &rsaquo; <span>Windows ME</span></nav>
-      <h1>Windows ME Installation</h1>
-      <p>Released: 2000</p>
+      <nav class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../case-study.html">Case Study</a> &rsaquo; <span>Remote Desktop</span></nav>
+      <h1>Part 6: Remote Desktop</h1>
+      <p>Case Study — Windows Server Setup</p>
     </div>
   </section>
 
@@ -76,34 +51,29 @@
       <div class="video-detail-layout">
         <div class="video-main">
           <div class="video-wrapper-lg">
-            <iframe src="https://www.youtube.com/embed/6Kyq_JU2f4g" title="Windows ME Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SnEX6Qy-7UI" title="Part 6: Remote Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <a href="https://youtu.be/6Kyq_JU2f4g" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
+          <a href="https://youtu.be/SnEX6Qy-7UI" target="_blank" rel="noopener" class="btn btn-yt">&#9654; Watch on YouTube</a>
         </div>
         <div class="video-info">
           <h2>Overview</h2>
-          <p>Windows Millennium Edition was the last OS in the Windows 9x line. It introduced System Restore, Windows Movie Maker, and improved multimedia support, though it was known for stability issues.</p>
-          <h2>Installation Steps</h2>
+          <p>Learn how to configure Remote Desktop Services on Windows Server to allow remote administrative access and secure remote connectivity for multiple users.</p>
+          <h2>Key Topics</h2>
           <div class="steps-container">
             <ol class="steps-list">
-              <li>Create a virtual machine with 128 MB RAM and 2 GB disk.</li>
-              <li>Boot from the Windows ME startup disk.</li>
-              <li>Partition and format the drive using FDISK.</li>
-              <li>Run SETUP from the CD-ROM drive.</li>
-              <li>Accept the license and enter the product key.</li>
-              <li>Choose installation directory and setup type.</li>
-              <li>Wait for files to copy.</li>
-              <li>Restart the system.</li>
-              <li>Complete hardware detection and driver setup.</li>
-              <li>Finish setup and explore the desktop.</li>
+              <li>Enable Remote Desktop on the Windows Server.</li>
+              <li>Configure the Windows Firewall to allow RDP traffic.</li>
+              <li>Manage Remote Desktop user permissions.</li>
+              <li>Connect to the server from a client machine using Remote Desktop Connection.</li>
+              <li>Secure Remote Desktop sessions.</li>
             </ol>
           </div>
         </div>
       </div>
       <div class="page-nav">
-        <a href="windows-2000.html" class="btn btn-outline">&larr; Windows 2000</a>
-        <a href="../windows-os.html" class="btn btn-outline">All Windows OS</a>
-        <a href="windows-xp.html" class="btn btn-outline">Windows XP &rarr;</a>
+        <a href="raid.html" class="btn btn-outline">&larr; Part 5: RAID</a>
+        <a href="../case-study.html" class="btn btn-outline">All Case Study</a>
+        <a href="web-server.html" class="btn btn-outline">Part 7: Web Server &rarr;</a>
       </div>
     </div>
   </section>
@@ -113,8 +83,8 @@
       <div class="footer-grid">
         <div class="footer-col"><h4><span class="logo-icon">&#9881;</span> WinTutorials</h4><p>Your comprehensive guide to Windows OS and Server installation tutorials.</p></div>
         <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../windows-os.html">Windows OS</a></li><li><a href="../windows-server.html">Windows Server</a></li><li><a href="../activities.html">Activities</a></li><li><a href="../about.html">About</a></li></ul></div>
-        <div class="footer-col"><h4>Popular</h4><ul><li><a href="windows-xp.html">Windows XP</a></li><li><a href="windows-10.html">Windows 10</a></li><li><a href="windows-11.html">Windows 11</a></li></ul></div>
-        <div class="footer-col"><h4>Server</h4><ul><li><a href="../windows-server/windows-server-2008-r2.html">Server 2008 R2</a></li><li><a href="../activities/adding-dhcp-role.html">DHCP Role</a></li><li><a href="../activities/group-policy.html">Group Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Popular</h4><ul><li><a href="../windows-os/windows-xp.html">Windows XP</a></li><li><a href="../windows-os/windows-10.html">Windows 10</a></li><li><a href="../windows-os/windows-11.html">Windows 11</a></li></ul></div>
+        <div class="footer-col"><h4>Case Study</h4><ul><li><a href="domain-controller.html">Domain Controller</a></li><li><a href="adding-users.html">Adding Users</a></li><li><a href="dhcp-server.html">DHCP Server</a></li><li><a href="group-policies.html">Group Policies</a></li></ul></div>
       </div>
       <div class="footer-bottom"><p>&copy; 2026 WinTutorials. All rights reserved.</p></div>
     </div>
